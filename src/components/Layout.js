@@ -84,8 +84,8 @@ const Layout = ({ children }) => (
           <GlobalStyle />
           {children}
           <Footer>
-            &copy; 2018 by John Doe. All rights reserved. <br />
-            <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
+            &copy; 2018 by <a href="https://github.com/borkke">borkke</a><br />
+            <a href="/categories">categories</a> - <a href="/about">about me</a> - <a target="_blank" href="https://www.linkedin.com/in/aleksandar-borkovac/">contact</a><br />
             <span>Last build: {data.site.buildTime}</span>
           </Footer>
         </React.Fragment>

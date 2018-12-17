@@ -32,7 +32,7 @@ const Category = ({ pageContext: { category }, data: { allMarkdownRemark } }) =>
       <Wrapper>
         <Helmet title={`${category} | ${config.siteTitle}`} />
         <Header>
-          <Link to="/">{config.siteTitle}</Link>
+          <Link to="/">Home</Link>
         </Header>
         <Content>
           <SectionTitle>Category &ndash; {category}</SectionTitle>

@@ -38,9 +38,9 @@ const Category = ({
 }) => (
   <Layout>
     <Wrapper>
-      <Helmet title={`Categories | ${config.siteTitle}`} />
+      <Helmet title={`Categories | Borkke`} />
       <Header>
-        <Link to="/">{config.siteTitle}</Link>
+        <Link to="/">Home</Link>
       </Header>
       <Content>
         <SectionTitle>Categories</SectionTitle>

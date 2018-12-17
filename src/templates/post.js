@@ -43,7 +43,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
         <SEO postPath={slug} postNode={postNode} postSEO />
         <Helmet title={`${post.title} | ${config.siteTitle}`} />
         <Header>
-          <Link to="/">{config.siteTitle}</Link>
+          <Link to="/">Home</Link>
         </Header>
         <Content>
           <Title>{post.title}</Title>
