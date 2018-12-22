@@ -57,5 +57,12 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-KXD5K3F",
+        includeInDevelopment: false,
+      },
+    },
   ],
 };
