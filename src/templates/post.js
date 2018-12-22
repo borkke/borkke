@@ -8,6 +8,7 @@ import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
 import '../utils/prismjs-theme.css';
+import Disqus from 'disqus-react';
 
 const Content = styled.article`
   grid-column: 2;
@@ -35,7 +36,13 @@ const PostContent = styled.div`
 `;
 
 const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postNode } }) => {
-  const post = postNode.frontmatter;
+const post = postNode.frontmatter;
+const disqusShortname = 'borkke-tech';
+const disqusConfig = {
+  url: 'https://borkke-tech.disqus.com',
+  identifier: post.date,
+  title: post.title,
+};
 
   return (
     <Layout>
@@ -53,6 +60,7 @@ const Post = ({ pageContext: { slug, prev, next }, data: { markdownRemark: postN
           </Subline>
           <PostContent dangerouslySetInnerHTML={{ __html: postNode.html }} />
           <PrevNext prev={prev} next={next} />
+          <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </Content>
       </Wrapper>
     </Layout>
