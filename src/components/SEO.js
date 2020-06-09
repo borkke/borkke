@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import FullStory from 'react-fullstory';
 import config from '../../config/SiteConfig';
 
 const SEO = props => {
@@ -75,6 +76,7 @@ const SEO = props => {
     <Helmet>
       <html lang={config.siteLanguage} />
       <title>{config.siteTitle}</title>
+      <FullStory org="VRR7P" />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
       <script type="application/ld+json">{JSON.stringify(schemaOrgJSONLD)}</script>
