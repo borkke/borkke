@@ -8,6 +8,12 @@ module.exports = {
     siteUrl: config.siteUrl + pathPrefix,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: "VRR7P",
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
